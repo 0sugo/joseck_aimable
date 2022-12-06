@@ -3,22 +3,51 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Fork Me! FCC: Test Suite Template</title>
+  <title>form</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   <h1 id="title"> Hello World, we are software developers!</h1>
-  <p>this is simple form to get your details</p>
+  <p id= "decription">this is simple form to get your details</p>
   <form action="" id="survey-form">
-    <label for="name">First name:</label><br>
-    <input type="text" id="name" value=""><br><br>
-    <label for="email">email</label><br>
-    <input type="email" id="email" value=""><br><br>
-    <label for="number">number</label><br>
-    <input type="tel" id="number" value=""><br><br>
-    <input type="submit" value="Submit">
+    <label for="name-label">First name:</label><br>
+    <input type="text" id="name" placeholder="First name"><br><br>
+    <label for="email-label">email</label><br>
+    <input type="email" id="email" placeholder="Email"><br><br>
+    <label for="number-label">number</label><br>
+    <input type="number" id="number" min="8" max="10" placeholder="Number"><br><br>
+    
+    <label for="games">Choose your favouriote game:</label>
+
+<select name="games" id="dropdown">
+  <option value="football">Football</option>
+  <option value="cricket">Cricket</option>
+  
+</select>
+<br><br>
+<label for="gender">Choose gender:</label><br>
+<input type="radio" id="gender" name="gender" value="female">
+<label for="male">male</label><br>
+<input type="radio" id="css" name="gender" value="male">
+<label for="female">Female</label><br><br>
+
+<label for="gender">Choose car wish list:</label><br>
+<input type="checkbox" id="car1" name="vehicle1" value="Bike">
+<label for="car1"> Toyota</label><br>
+<input type="checkbox" id="car2" name="vehicle2" value="Car">
+<label for="car2"> porsche</label><br>
+<input type="checkbox" id="car3" name="vehicle3" value="Boat">
+<label for="car3"> Landrover</label><br><br>
+
+<label for="comments">AOB:</label>
+
+<textarea id="faqs" name="faqs" rows="4" cols="50">
+
+</textarea>
+
+    <input type="submit" id="submit" value="Submit">
   </form>
   <!--
 
